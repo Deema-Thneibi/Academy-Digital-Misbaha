@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Digital-7';
+    src: url('../venders/fonts/digital-7.ttf') format('truetype');
+}
+
+body {
+    font-family: "Noto Kufi Arabic", sans-serif;
+    background-color: rgba(247, 247, 248, 1);
+    display: flex;
+    flex-direction: column;
+    direction: rtl;
+    text-align: right;
+    background-color: rgb(196 150 1 / 21%);
+
+}
+
+.container {
+    width: calc(100% - 15.375rem);
+    margin: auto;
+    padding: 1rem;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    /* هذا يضمن أن جميع العناصر ستكون بارتفاع متساوي */
+    gap: 2rem;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+/* header */
+@media screen and (max-width: 1409px) {
+
+    .container {
+        width: calc(100% - 2rem);
+    }
+
+
+    header .container .nav {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 554px) {
+    header .container {
+        padding: 0rem;
+    }
+
+    header .container .row {
+        font-size: 1rem;
+    }
+
+    header .container .auth {
+        gap: 1rem;
+    }
+
+    header .container .login {
+        padding: 0.3rem 0.8rem;
+    }
+
+    .container .login:hover {
+        padding: 0.4rem 0.9rem;
+    }
+
+    .container .signup:hover {
+        padding: 0.3rem 0.8rem;
+    }
+
+}
+
+header {
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 9;
+}
+
+header .container {
+    font-size: 1.4rem;
+}
+
+header .row {
+    gap: 3.125rem;
+}
+
+header .logo {
+    width: 5rem;
+}
+
+header .logo img {
+    width: 100%;
+    aspect-ratio: 100/100;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+header .logo-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3.125rem;
+    align-items: center;
+}
+
+header .nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.625rem;
+    align-items: center;
+    transition: color 1s;
+}
+
+header .nav a:hover {
+    color: rgba(255, 149, 0, 1);
+    background-color: rgba(241, 241, 243, 1);
+    padding: 0.875rem 1.5rem;
+    border-radius: 0.5rem;
+}
+
+
+header .active {
+    background-color: rgba(241, 241, 243, 1);
+    color: rgba(255, 149, 0, 1);
+    padding: 0.875rem 1.5rem;
+    border-radius: 0.5rem;
+}
+
+
+header .auth {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1.875rem;
+}
+
+header .login {
+    background-color: rgba(255, 149, 0, 1);
+    padding: 0.875rem 2.125rem;
+    border-radius: 0.5rem;
+    transition: color 1s, padding 1s;
+}
+
+.login:hover {
+    color: rgba(241, 241, 243, 1);
+    padding: 1rem 2.2rem;
+}
+
+.signup {
+    transition: color 1s, border 1s, padding 1s, border-radius 1s;
+}
+
+.signup:hover {
+    color: rgba(255, 149, 0, 1);
+    box-sizing: content-box;
+    border: solid rgba(255, 149, 0, 1);
+    border-radius: 0.5rem;
+    padding: 0.8rem 1.5rem;
+}
+
+
+/* hero */
+.hero {
+    background-image: url('../img/hero.jpg');
+    background-size: 100% 100%;
+    height: 100vh;
+}
+
+/* sec-2 */
+@media screen and (max-width: 889px) and (min-width: 553px) {
+
+    .sec-2 .item {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 554px) and (min-width: 400px) {
+
+    .sec-2 .item {
+        width: 100%;
+    }
+
+    .item h1 {
+        font-size: 1.8rem;
+    }
+
+    .row .item>span {
+        font-size: 1rem;
+    }
+
+    .item p {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    .sec-2 .item {
+        width: 100%;
+    }
+
+    .item h1 {
+        font-size: 1.5rem;
+    }
+
+    .row .item>span {
+        font-size: 1rem;
+    }
+
+    .item p {
+        font-size: 1rem;
+    }
+}
+
+.sec-2 {
+    margin-top: 5rem;
+}
+
+.item {
+    width: calc((100% - 2rem) / 2);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 2rem 1.5rem;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.10);
+    border-radius: 0.5rem;
+    box-shadow: 2px 4px 20px 0px rgba(255, 149, 0, 0.507);
+    gap: 2rem;
+    background-color: aliceblue;
+}
+
+h1 {
+    font-size: 2.2rem;
+    color: rgba(206, 123, 6, 0.812);
+}
+
+.item>span {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+.counter {
+    background-image: url('../img/1.png');
+    background-size: 100% 100%;
+    width: 200px;
+    height: 250px;
+    position: relative;
+    text-align: center;
+}
+
+.counter1 {
+    background-image: url('../img/1.png');
+}
+
+.counter2 {
+    background-image: url('../img/2.png');
+}
+
+.counter3 {
+    background-image: url('../img/3.png');
+}
+
+.counter4 {
+    background-image: url('../img/4.png');
+}
+
+.counter5 {
+    background-image: url('../img/5.png');
+}
+
+.counter6 {
+    background-image: url('../img/6.png');
+}
+
+.counter7 {
+    background-image: url('../img/7.png');
+}
+
+.counter8 {
+    background-image: url('../img/8.png');
+}
+
+.counter9 {
+    background-image: url('../img/9.png');
+}
+
+.counter10 {
+    background-image: url('../img/10.png');
+}
+
+.counter11 {
+    background-image: url('../img/11.png');
+}
+
+.counter12 {
+    background-image: url('../img/12.png');
+}
+
+.counter13 {
+    background-image: url('../img/13.png');
+}
+
+.counter14 {
+    background-image: url('../img/14.png');
+}
+
+.counter15 {
+    background-image: url('../img/15.png');
+}
+
+.counter16 {
+    background-image: url('../img/16.png');
+}
+
+.counter17 {
+    background-image: url('../img/17.png');
+}
+
+.screen {
+    position: absolute;
+    top: 3rem;
+    left: 2rem;
+    width: 8.55rem;
+    text-align: right;
+}
+
+.screen-count {
+    font-size: 3rem;
+    font-family: 'Digital-7', sans-serif;
+    color: rgba(0, 0, 0, 0.60);
+}
+
+.count {
+    background-color: rgba(255, 255, 255, 0.503);
+    border-radius: 50%;
+    width: 3.8rem;
+    height: 3.8rem;
+    position: absolute;
+    top: 9.88rem;
+    left: 4.33rem;
+    border: none;
+    cursor: pointer;
+}
+
+.reset {
+    background-color: gray;
+    border-radius: 50%;
+    width: 1.5rem;
+    height: 1.5rem;
+    position: absolute;
+    top: 8.2rem;
+    left: 8.63rem;
+    border: 2px solid white;
+    cursor: pointer;
+}
