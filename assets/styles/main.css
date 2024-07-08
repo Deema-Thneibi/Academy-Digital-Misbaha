@@ -25,7 +25,7 @@ body {
 .container {
     width: calc(100% - 15.375rem);
     margin: auto;
-    padding: 1rem;
+    padding: 0.3rem;
 }
 
 .row {
@@ -90,7 +90,7 @@ header {
 }
 
 header .container {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
 }
 
 header .row {
@@ -127,7 +127,7 @@ header .nav {
 header .nav a:hover {
     color: rgba(255, 149, 0, 1);
     background-color: rgba(241, 241, 243, 1);
-    padding: 0.875rem 1.5rem;
+    padding: 0.5rem 1rem;
     border-radius: 0.5rem;
 }
 
@@ -135,7 +135,7 @@ header .nav a:hover {
 header .active {
     background-color: rgba(241, 241, 243, 1);
     color: rgba(255, 149, 0, 1);
-    padding: 0.875rem 1.5rem;
+    padding: 0.5rem 1rem;
     border-radius: 0.5rem;
 }
 
@@ -149,14 +149,14 @@ header .auth {
 
 header .login {
     background-color: rgba(255, 149, 0, 1);
-    padding: 0.875rem 2.125rem;
+    padding: 0.5rem 1rem;
     border-radius: 0.5rem;
     transition: color 1s, padding 1s;
 }
 
 .login:hover {
     color: rgba(241, 241, 243, 1);
-    padding: 1rem 2.2rem;
+    padding: 0.8rem 1.5rem;
 }
 
 .signup {
@@ -187,24 +187,6 @@ header .login {
     }
 }
 
-@media screen and (max-width: 554px) and (min-width: 400px) {
-
-    .sec-2 .item {
-        width: 100%;
-    }
-
-    .item h1 {
-        font-size: 1.8rem;
-    }
-
-    .row .item>span {
-        font-size: 1rem;
-    }
-
-    .item p {
-        font-size: 1rem;
-    }
-}
 
 @media screen and (max-width: 400px) {
 
@@ -214,14 +196,6 @@ header .login {
 
     .item h1 {
         font-size: 1.5rem;
-    }
-
-    .row .item>span {
-        font-size: 1rem;
-    }
-
-    .item p {
-        font-size: 1rem;
     }
 }
 
@@ -245,17 +219,17 @@ header .login {
 }
 
 h1 {
-    font-size: 2.2rem;
+    font-size: 1.8rem;
     color: rgba(206, 123, 6, 0.812);
 }
 
 .item>span {
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 700;
 }
 
 p {
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .counter {
