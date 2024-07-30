@@ -180,7 +180,7 @@ header .login {
 }
 
 /* sec-2 */
-@media screen and (max-width: 889px) and (min-width: 553px) {
+@media screen and (max-width: 889px) {
 
     .sec-2 .item {
         width: 100%;
@@ -198,6 +198,7 @@ header .login {
         font-size: 1.5rem;
     }
 }
+
 
 .sec-2 {
     margin-top: 5rem;
